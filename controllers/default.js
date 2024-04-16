@@ -12,4 +12,4 @@ async function defaultRouteController(res, url) {
   }
 }
 
-module.exports = { defaultRouteController };
+module.exports = defaultRouteController;

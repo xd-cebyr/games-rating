@@ -1,6 +1,6 @@
 const fs = require("fs").promises;
 const { getRandomGame } = require("../appModules/api");
-const config = require("../appModules/rating");
+const { config } = require("../appModules/rating");
 async function gameRouteController(res) {
   try {
     const ratingFile = await fs.readFile(config.PATH_TO_RATING_FILE);
@@ -14,4 +14,4 @@ async function gameRouteController(res) {
     res.end("Internal Server Error");
   }
 }
-module.exports = { gameRouteController };
+module.exports = gameRouteController;

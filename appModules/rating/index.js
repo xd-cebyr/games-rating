@@ -1,7 +1,7 @@
 const config = require("./config");
-const createRating = require("./calculations");
 const MakeRatingFile = require("./rating-file");
-const updateRating = require("./calculations");
+const { updateRating, createRating } = require("./calculations");
+const PATH_TO_RATING_FILE = require("./config");
 module.exports = {
   config,
   MakeRatingFile,

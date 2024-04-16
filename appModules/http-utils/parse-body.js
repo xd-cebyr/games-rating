@@ -12,4 +12,4 @@ function parseBody(req) {
     });
   });
 }
-module.exports = { parseBody };
+module.exports = parseBody;
